@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+  
+</head>
+<body>
+     <fieldset>
+        <legend>Image Picker</legend>
+        <select name="animal" id="animals" onchange="pilihGambar()">
+            <option value="0">Pilih Gambar</option>
+            <option value="a">Ayam</option>
+            <option value="b">Burung Cendrawasih</option>
+            <option value="c">Gorilla</option>
+            <option value="d">Kucing</option>
+            <option value="e">Panda</option>
+            <option value="f">Singa</option>
+            <option value="g">Zebra</option>
+        </select>
+    </fieldset>
+        
+    <div>
+        <img src="#" id="gambar" alt="" width="300px" >
+    </div>
+    
+    <script>
+        const gb = document.getElementById("gambar")
+
+        function pilihGambar() {
+          if (animals.value == "a") {
+            gb.src = "image/Ayam.jpg"
+            alert("Ini gambar Ayam")
+          }
+          else  if(animals.value == "b") {
+            gb.src = "image/Cendrawasih.jpg"
+            alert("Ini gambar Burung Cendrawasih")
+          }
+          else  if(animals.value == "c") {
+            gb.src = "image/Gorilla.jpg"
+            alert("Ini gambar Gorilla")
+          }
+          else  if(animals.value == "d") {
+            gb.src = "image/Kucing.jpg"
+            alert("Ini gambar Kucing")
+          }
+          else  if(animals.value == "e") {
+            gb.src = "image/Panda.jpg"
+            alert("Ini gambar Panda")
+          }
+          else  if(animals.value == "f") {
+            gb.src = "image/Singa.jpg"
+            alert("Ini gambar Singa")
+          }
+           else  if(animals.value == "g") {
+            gb.src = "image/Zebra.jpg"
+            alert("Ini gambar Zebra")
+          }
+          
+        }
+    </script>
+    
+</body>
+</html>
